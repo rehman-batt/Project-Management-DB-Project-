@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title><%= title %></title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center mt-3 mb-3"><%= title %></h1>
+            
+          
+
+            <div class="card">
+                <div class="card-header">New User Form</div>
+                <div class="card-body">
+                    <form action="/create_new_user">
+                        <input type="text" id="fname" name="fname" class="form-input" placeholder="John">
+                        <input type="text" id="lname" name="lname" class="form-input" placeholder="Doe">
+                        <input type="text" id="user_name" name="user_name" class="form-input" placeholder="john">
+                        <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com">
+                        <input type="password" id="user_password" name="user_password" class="form-input" placeholder="Password">
+                        <select id="user_role" name="user_role">
+                            <option value="Admin" selected>Admin</option>
+                            <option value="Customer">Customer</option>
+                            <option value="Team Member">Team Member</option>
+                        </select>
+                        <input type="date" id="dob" name="dob" class="form-input" >
+                        
+                        <button type="submit">CLick</button>
+
+                    </form>
+                </div>
+            </div>
+
+        
+                
+           
+
+        </div> 
+
+       
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer-issue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="customer-home.html">Home</a></li>
+                <li><a href="customer-issue.html" class="active">Issues</a></li>
+                <li><a href="customer-comment.html">Comments</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Issues</h1>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature-box">
+                <h3>Issues</h3>
+                <img src="issue.jpg" alt="Feature 1" class="feature-img">
+
+                <form action="/customer_issue">
+                    <select id="project_options" name="project_options">
+                    <option value="Default" selected disabled>Default</option>
+                    <option value="1">Issues Reported</option>
+                    
+                </select>
+                <button type="submit">click</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 DataBase Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin-reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Admin-home.html" >Home</a></li>
+                <li><a href="Admin-projects.html">project</a></li>
+                <li><a href="Admin-users.html">Users</a></li>
+                <li><a href="Admin-reports.html" class="active">Reports</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Reports</h1>
+                <p>Project Mangement Software</p>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature-box">
+                <h3>Reports</h3>
+                <img src="report.jpg" alt="Feature 1" class="feature-img">
+
+                <form action="/admin_reports">
+                    <select id="project_options" name="project_options">
+                        <option value="Default" selected disabled>Default</option>
+                        <option value="1">Completed Projects</option>
+                        <option value="2">Active Projects For each Team</option>
+                        <option value="3">Completed Projects by each Team</option>
+                    </select>
+                <button type="submit">click</button>
+            </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 DataBase Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>

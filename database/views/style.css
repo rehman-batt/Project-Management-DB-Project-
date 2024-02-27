@@ -1,0 +1,250 @@
+/* Typography */
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 1.2;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 1.2;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: Algerian;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Header */
+header {
+    background-color: rgb(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.9);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 25px;
+    }
+
+    nav a {
+        color: dimgrey;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 20px;
+        transition: background-color 0.2s ease-in-out;
+        font-family: 'Lucida Calligraphy';
+    }
+
+        nav a.active,
+        nav a:hover {
+            background-color: #f9f9f9;
+        }
+
+/* Hero */
+.hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 110px;
+}
+
+.feature-box {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent gray */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    border-radius: 50px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.feature-img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 40px;
+}
+
+
+
+/* CTA */
+.cta {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+    .cta h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 255, 0.3);
+    color: #333;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+    .btn:hover {
+        background-color: #f9f9f9;
+    }
+
+/* Footer */
+footer {
+    background-color: rgb(255, 255, 255,0.5);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+    footer p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+/*drop down*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-toggle {
+    background-color: rgb(76, 255, 0, 0.5);
+    color: #333333;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .dropdown-toggle:hover {
+        background-color: #f2f2f2;
+    }
+
+.dropdown-menu a {
+    color: #333333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+    .dropdown-menu a:hover {
+        background-color: #f2f2f2;
+    }
+
+    /*dropdown*/
+select {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-size: 16px;
+    color: #333;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('up.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+}
+
+    /* Style for the dropdown arrow */
+    select::-ms-expand {
+        display: none;
+    }
+
+/* Style for the options */
+option {
+    background-color: lightgray;
+    color: #333;
+    font-size: 16px;
+}
+
+/* Style for the dropdown when it's open */
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #888;
+}
+
+/* Style for the dropdown when an option is selected */
+select option:checked {
+    background-color: #f1f1f1;
+    color: #333;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TeamMember-Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="TeamMember-home.html" >Home</a></li>
+                <li><a href="TeamMember-Issue.html">Issues</a></li>
+                <li><a href="TeamMember-Project.html" class="active">Projects</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Projects</h1>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature-box">
+                <h3>Projects</h3>
+                <img src="project.jpg" alt="Feature 1" class="feature-img">
+
+                <form action="/member_projects">
+                    <select id="project_options" name="project_options">
+                        <option value="Default" selected disabled>Default</option>
+                        <option value="1">Project Assigned</option>
+                    </select>
+                    <button type="submit">click</button>
+                </form>
+
+                
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 DataBase Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>

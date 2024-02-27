@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <title><%= title %></title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center mt-3 mb-3"><%= title %></h1>
+            
+                        <div class="card">
+                <div class="card-header">
+                    <div class="row">
+                        
+                        
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Due Date</th>
+                                <th>Priority</th>
+                                <th>Status</th>
+                                <th>Type</th>
+                                
+                            </tr>
+                            
+                            <%if(data.length > 0)
+                            {
+                                data.forEach(function(d){
+                            %>
+                            <tr>
+                                
+                                
+                                <td> <%= d.title %> </td>
+                                <td> <%= d.issue_description %> </td>
+                                <td> <%= d.due_date %> </td>
+                                <td> <%= d.priority %> </td>
+                                <td> <%= d.issue_status %> </td>
+                                <td> <%= d.issue_type %> </td>
+                               
+
+                            </tr>
+                            <%
+                                });
+                            }
+                            else
+                            {
+                            %>
+                            <tr>
+                                <td colspan="5">No Data Found</td>
+                            </tr>
+                            <%
+                            }
+                            %>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+
+        
+    </body>
+</html>

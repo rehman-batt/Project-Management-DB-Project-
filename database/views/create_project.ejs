@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title><%= title %></title>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center mt-3 mb-3"><%= title %></h1>
+            
+          
+
+            <div class="card">
+                <div class="card-header">New Team Form</div>
+                <div class="card-body">
+                    <form action="/create_new_project">
+                        
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Lumber 1 Project">
+                        <input type="text" id="desc" name="desc" class="form-input" placeholder="This is example description.">
+                        <input type="date" id="start" name="start" class="form-input" >
+
+                        <button type="submit">CLick</button>
+
+                    </form>
+                </div>
+            </div>
+
+        
+                
+           
+
+        </div> 
+
+       
+    </body>
+</html>

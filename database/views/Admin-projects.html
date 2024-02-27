@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin-projects</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Admin-home.html">Home</a></li>
+                <li><a href="Admin-projects.html" class="active">project</a></li>
+                <li><a href="Admin-users.html">Users</a></li>
+                <li><a href="Admin-reports.html">Reports</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Projects</h1>
+                <p>Project Mangement Software</p>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature-box">
+                <h3>Projects</h3>
+                <img src="project.jpg" alt="Feature 1" class="feature-img">
+               <form action="/admin_projects">
+                    <select id="project_options" name="project_options">
+                        <option value="Default" disabled selected>Default</option>
+                        <option value="1">All Projects</option>
+                        <option value="2">Active Projects</option>
+                        <option value="3">In-Active Projects</option>
+                        <option value="4">Completed Projects</option>
+                        <!-- <option value="4">Add Projects</option>
+                        <option value="5">Remove Projects</option>
+                        <option value="6">Update</option> -->
+                    </select>
+                <button type="submit">click</button>
+            </form>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 DataBase Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>

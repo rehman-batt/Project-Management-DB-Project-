@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin-users</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Admin-home.html" >Home</a></li>
+                <li><a href="Admin-projects.html">project</a></li>
+                <li><a href="Admin-users.html" class="active">Users</a></li>
+                <li><a href="Admin-reports.html">Reports</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Users</h1>
+                <p>Project Mangement Software</p>
+            </div>
+        </section>
+        <section class="features">
+            <div class="feature-box">
+                <h3>Users</h3>
+                <img src="user.jpg" alt="Feature 1" class="feature-img">
+                <form action="/admin_users">
+                    <select id="project_options" name="project_options">
+                        <option value="Default" selected disabled>Default</option>
+                        <option value="1">All Users</option>
+                        <option value="2">Add User</option>
+                        <option value="3">Remove User</option>
+                        <option value="4">Update User</option>
+                        <option value="5">Create Team</option>
+                        <option value="6">Add Team Memeber</option>
+                        <option value="7">Remove Team Memeber</option>
+                    </select>
+                <button type="submit">click</button>
+            </form>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 DataBase Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
